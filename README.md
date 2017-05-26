@@ -1,6 +1,8 @@
 # potoroo
 > password rules for npm
 
+[![Build Status](https://travis-ci.org/ashleygwilliams/potoroo.svg?branch=master)](https://travis-ci.org/ashleygwilliams/potoroo)
+
 ![potoroo](./potoroo.jpg)
 
 ## installation
