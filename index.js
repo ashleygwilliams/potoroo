@@ -10,7 +10,7 @@ function checkPassword (pw, username) {
   } else if (pw.length < 7) {
     const msg = 'The provided password is too short. Please pick a password longer than 7 characters.'
     return { isSafe: false, err: new UnsafePassword.Short(msg) }
-  } else if (unsafePasswordList.indexOf(pw) !== -1) {
+  } else if (unsafePasswordList.has(pw)) {
     const msg = 'The provided password is too common. Please pick a more unique password.'
     return { isSafe: false, err: new UnsafePassword.Common(msg) }
   } else {
