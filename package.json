@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "rockyou": "^0.1.1"
+    "rockyou": "^1.0.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
