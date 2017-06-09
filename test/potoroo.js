@@ -25,6 +25,16 @@ describe('potoroo', function () {
     assert.isTrue(Password(password, username).err.message.length > 0)
   })
 
+  it('returns false and an error if the password is not significantly different than the user name', function () {
+    const password = 'myusername123'
+    const username = 'myusername'
+    assert.isFalse(Password(password, username).isSafe)
+    assert.property(Password(password, username), 'err')
+    assert.instanceOf(Password(password, username).err, Error)
+    assert.instanceOf(Password(password, username).err, UnsafePassword.Username)
+    assert.isTrue(Password(password, username).err.message.length > 0)
+  })
+
   it('returns false and an error  if the password exists in the rockyou password list', function () {
     const password = '123456789'
     const username = 'rockyou'
