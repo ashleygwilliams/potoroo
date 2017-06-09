@@ -1,7 +1,7 @@
 {
   "name": "potoroo",
   "version": "1.1.0",
-  "description": "",
+  "description": "> password rules for npm",
   "main": "index.js",
   "scripts": {
     "lint": "standard --fix",
@@ -12,11 +12,23 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "rockyou": "^1.0.0"
+    "rockyou": "^1.1.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.4.2",
     "standard": "^10.0.2"
-  }
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashleygwilliams/potoroo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ashleygwilliams/potoroo/issues"
+  },
+  "homepage": "https://github.com/ashleygwilliams/potoroo#readme"
 }

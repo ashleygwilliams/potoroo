@@ -1,4 +1,4 @@
-const unsafePasswordList = require('rockyou')(70)
+const unsafePasswordList = require('rockyou')(75)
 const UnsafePassword = require('./lib/errors')
 
 module.exports = checkPassword
